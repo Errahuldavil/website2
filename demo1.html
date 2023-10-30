@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .footer{
+            height: 15%;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-color: #d0d9de;
+        }
+        .f1{
+            float: left;
+            height: 100%;
+            width: 40%;
+            /* border: 1px solid black; */
+        }
+        .f2{
+            float: left;
+            height: 100%;
+            width: 15%;
+            /* border: 1px solid black; */
+        }
+        .f3{
+            float: left;
+            height: 100%;
+            width: 30%;
+            /* border: 1px solid black; */
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        .outer {
+            height: 2000px;
+            margin: auto;
+            width: 1200px;
+            /* border: 1px solid black; */
+            background-color: #f7f7f7;
+        }
+
+        .navbar {
+            height: 2.8%;
+            width: 100%;
+            border: 1px solid black;
+
+            background-size: cover;
+        }
+
+        .photo {
+            height: 100%;
+            width: 15%;
+            float: left;
+        }
+
+        .ancor {
+            height: 100%;
+            width: 85%;
+            float: left;
+        }
+
+        .ancor ul li {
+            float: left;
+            margin-left: 40px;
+            list-style: none;
+            color: black;
+        }
+
+        .slider {
+            height: 20%;
+            width: 100%;
+            border: 1px solid black;
+            background-image: url(images/s.PNG);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            animation: a 5s  infinite alternate;
+        }
+        @keyframes a{
+            0%{
+                background-image: url(images/slider3.PNG);
+            }
+            50%{
+                background-image: url(images/slider4.PNG);
+            }
+            100%{
+                background-image: url(images/slider5.PNG);
+            }
+        }
+        .card{
+            height: 100%;
+            width: 15%;
+            /* border: 1px solid black; */
+            float: left;
+            margin-left: 8%;
+            border-radius: 10px;
+            /* background-image: url(gif/watch.gif); */
+            background-size: cover;
+            animation: abc 2s  infinite ;
+            
+        }
+        
+        
+        video{
+            border-radius: 30px;
+        }
+        .cards1
+        {
+            height: 25%;
+            width: 100%;
+            /* border: 1px solid black; */
+            margin-top: 5px;
+        }
+        .car{
+            height: 80%;
+            width: 20%;
+            margin: 20px auto;
+            margin-left: 40px;
+            border-radius: 10px;
+            /* background-color: red; */
+            /* border: 1px solid black; */
+            float: left;
+        }
+        .cardtop{
+            height: 70%;
+            width: 100%;
+            /* border: 1px solid black; */
+            box-shadow: 0px 0px 1px 0px black;
+            
+        }
+        .cardbottom{
+            height: 30%;
+            width: 100%;
+            /* border: 1px solid black; */
+            /* background-color: gray; */
+           
+            
+        }
+        .categ{
+            height: 8%;
+            width: 100%;
+            /* border: 1px solid black; */
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="outer">
+        <div class="navbar">
+            <div class="photo">
+                <img style="height: 30px;margin-left: 50%;margin-top: 2%;" src="images/logo.png" alt="">
+            </div>
+            <div class="ancor">
+                <ul>
+                    <a href="#">
+                        <li>Categories</li>
+                    </a>
+                    <a href="#">
+                        <li>Daily Deals</li>
+                    </a>
+                    <a href="#">
+                        <li>Gift with boAt</li>
+                    </a>
+                    <a href="#">
+                        <li>Corporate Orders</li>
+                    </a>
+                    <a href="#">
+                        <li>More</li>
+                    </a>
+                    <input
+                        style="margin-left: 5%;height: 30px;border-radius: 30px;border: 0.5 solid gray;margin-top: -5px;"
+                        placeholder="Search 'speaker' " type="search">
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="slider">
+
+        </div>
+        <div style="height: 10%;width: 100%;margin-top: 20px;" class="cards">
+            <div  class="card">
+                <video autoplay style="height: 100%;width: 100%;" src="images/watch.mp4"></video>
+            </div>
+            <div  class="card">
+                <video autoplay style="height: 100%;width: 100%;border-radius: 10px;" src="images/wirelessearphone.mp4"></video>
+
+            </div>
+            <div  class="card">
+                <video autoplay style="height: 100%;width: 100%;" src="images/watch.mp4"></video>
+
+            </div>
+            <div  class="card">
+                <video autoplay style="height: 100%;width: 100%;" src="images/nechband.mp4"></video>
+
+            </div>
+        </div>
+        <!--Outer2 satrt-->
+        <div style="height: 75%;width: 100%;margin: auto;" class="outer2">
+            <h4>Today Killer Offer's</h4>
+                    <!--Slider 2 satrt-->
+            <div style="margin-top: 10px; height: 8%;width: 100%;background-image: url(images/banner.jpg);background-size: 100% 100%;" class="ban"></div>
+                        <!--Slider 2 End-->
+<!--Card start-->
+                <div class="cards1">
+                    <div class="car">
+                        <div class="cardtop">
+                            <img height="150px" src="images/birds.jpg" alt="">
+                        </div>
+                        <div class="cardbot">
+                            <b>Airdopes 131</b> Rs.849
+                            <br>
+                            Rs<strike>2,999</strike> <b style="color: green;">72% off</b>
+                            <br>
+                            
+                            <input style="border-radius: 10px; height: 30px;margin-left: 105px;background-color: black;color: white;" value="Add to cart" type="submit">
+                        </div>
+                    </div>
+                    <div class="car">
+                        <div class="cardtop">
+                            <img style="background-size: 100% 100%;" height="150px" src="images/birds1.jpg" alt="">
+                        </div>
+                        <div class="cardbot">
+                            <b>Airdopes 131</b> Rs.849
+                            <br>
+                            Rs<strike>2,999</strike> <b style="color: green;">72% off</b>
+                            <br>
+                            
+                            <input style="border-radius: 10px; height: 30px;margin-left: 105px;background-color: black;color: white;" value="Add to cart" type="submit">
+                        
+                        </div>
+                    </div>
+                    <div class="car">
+                        <div class="cardtop">
+                            <img style="background-size: cover;" height="170px" src="images/birds3.jpg" alt="">
+                        </div>
+                        <div class="cardbot">
+                            <b>Airdopes 131</b> Rs.849
+                            <br>
+                            Rs<strike>2,999</strike> <b style="color: green;">72% off</b>
+                            <br>
+                            
+                            <input style="border-radius: 10px; height: 30px;margin-left: 105px;background-color: black;color: white;" value="Add to cart" type="submit">
+                        
+                        </div>
+                    </div>
+                    <div class="car">
+                        <div class="cardtop">
+                            <img style="background-size: 100% 100%;" height="170px" src="images/birds5.jpg" alt="">
+                        </div>
+                        <div  class="cardbot">
+                            <b>Airdopes 131</b> Rs.849
+                            <br>
+                            Rs<strike>2,999</strike> <b style="color: green;">72% off</b>
+                            <br>
+                            
+                            <input style="border-radius: 10px; height: 30px;margin-left: 105px;background-color: black;color: white;" value="Add to cart" type="submit">
+                        
+                        </div>
+                    </div>
+                </div>
+                <!--Card End-->
+                    <b style="font-size: 25px;">Shop by</b> <b style="font-size: 30px;">Categori</b><b style="font-size: 30px;border-bottom: 3px solid red;">es</b>
+                    <br>
+                    <div class="categ">
+                        <img height="80px" src="images/earphone1.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img style="margin-left: 40px;" height="80px" src="images/ear3.jpg" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img style="margin-left: 40px;" height="80px" src="images/ear4.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img style="margin-left: 40px;" height="80px" src="images/ear5.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img style="margin-left: 40px;" height="80px" src="images/ear6.jpg" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img style="margin-left: 40px;" height="80px" src="images/ear2.jpg" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img style="margin-left: 40px;" height="80px" src="images/earphone1.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img style="margin-left: 20px;" height="80px" src="images/ear3.jpg" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <!-- <img height="80px" src="images/earphone1.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                        <!-- <img height="80px" src="images/ear3.jpg" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                        
+                    </div>
+                    <div style="height: 2%;width: 100%;" class="ff">
+                    <b>Neckband</b>
+                    <b style="margin-left: 45px;">True Wireless</b>
+                    <b style="margin-left: 45px;">Earpods</b>
+                    <b style="margin-left: 10%;">Earbirds</b>
+                    <b style="margin-left: 8%;">Earphone</b>
+                    <b style="margin-left: 10%;">Earphone</b>
+                    <b style="margin-left: 7%;">Earphone</b>
+                    </div>
+                    <b style="font-size: 25px;">New</b> <b style="font-size: 30px;">Launc</b><b style="font-size: 30px;border-bottom: 3px solid red;">hes</b>
+                    <div class="cards1">
+                        <div class="car">
+                            <div class="cardtop">
+                                <img style="height: 175px;width: 100%;" src="images/box1.PNG" alt="">
+                            </div>
+                            <div style="background-color: #d0d9de;" class="cardbot">
+                                <b>Airdopes 131</b> Rs.849
+                                <br>
+                                Rs<strike>2,999</strike> <b style="color: green;">72% off</b>
+                                <br>
+                                
+                                <input style="border-radius: 10px; height: 30px;margin-left: 105px;background-color: black;color: white;" value="Add to cart" type="submit">
+                            </div>
+                        </div>
+                        <div class="car">
+                            <div class="cardtop">
+                                <img style="height: 175px;width: 100%;" src="images/box2.PNG" alt="">
+                            </div>
+                            <div style="background-color: #d0d9de;" class="cardbot">
+                                <b>Airdopes 131</b> Rs.849
+                                <br>
+                                Rs<strike>2,999</strike> <b style="color: green;">72% off</b>
+                                <br>
+                                
+                                <input style="border-radius: 10px; height: 30px;margin-left: 105px;background-color: black;color: white;" value="Add to cart" type="submit">
+                            
+                            </div>
+                        </div>
+                        <div class="car">
+                            <div class="cardtop">
+                                <img style="height: 175px;width: 100%;" src="images/box3.PNG" alt="">
+                            </div>
+                            <div style="background-color: #d0d9de;" class="cardbot">
+                                <b>Airdopes 131</b> Rs.849
+                                <br>
+                                Rs<strike>2,999</strike> <b style="color: green;">72% off</b>
+                                <br>
+                                
+                                <input style="border-radius: 10px; height: 30px;margin-left: 105px;background-color: black;color: white;" value="Add to cart" type="submit">
+                            
+                            </div>
+                        </div>
+                        <div class="car">
+                            <div class="cardtop">
+                                <img style="height: 175px;width: 100%;" src="images/box4.PNG" alt="">
+  </div>
+                            <div style="background-color: #d0d9de;" class="cardbot">
+                                <b>Airdopes 131</b> Rs.849
+                                <br>
+                                Rs<strike>2,999</strike> <b style="color: green;">72% off</b>
+                                <br>
+                                
+                                <input style="border-radius: 10px; height: 30px;margin-left: 105px;background-color: black;color: white;" value="Add to cart" type="submit">
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <b style="font-size: 25px;">Shop by</b> <b style="font-size: 30px;">Life st</b><b style="font-size: 30px;border-bottom: 3px solid red;">yle</b>
+                  <!--celebrity card start-->
+                  <div class="cards1">
+                    <div class="car">
+                        <div class="cardtop">
+                            <img style="height: 100%;width: 100%;" src="images/hero2.jpg" alt="">
+                        </div>
+                        <div style="background-color: #d0d9de;" class="cardbot">
+                        <p style="text-align: center;font-weight: bold;">For Parties</p> 
+                        <p style="text-align: center;font-weight: bold;">View All</p> 
+
+                        </div>
+                    </div>
+                    <div class="car">
+                        <div class="cardtop">
+                            <img style="height: 100%;width: 100%;" src="images/hero3.jpg" alt="">
+                        </div>
+                        <div style="background-color: #d0d9de;"  class="cardbot">
+                            <p style="text-align: center;font-weight: bold;">For Work</p> 
+                        <p style="text-align: center;font-weight: bold;">View All</p>
+                        </div>
+                    </div>
+                    <div class="car">
+                        <div class="cardtop">
+                            <img style="height:100%;width: 100%;" src="images/hero4.PNG" alt="">
+                        </div>
+                        <div style="background-color: #d0d9de;" class="cardbot">
+                            <p style="text-align: center;font-weight: bold;">For Entertainment</p> 
+                        <p style="text-align: center;font-weight: bold;">View All</p>
+                        </div>
+                    </div>
+                    <div class="car">
+                        <div class="cardtop">
+                            <img style="height: 100%;width: 100%;" src="images/hero5.PNG" alt="">
+</div>
+                        <div style="background-color: #d0d9de;" class="cardbot">
+                            <p style="text-align: center;font-weight: bold;">For Audiophiles</p> 
+                            <p style="text-align: center;font-weight: bold;">View All</p>
+                        </div>
+                    </div>
+                </div>
+                  <!--celebrity card end-->
+           </div>   <br><br>
+         <!--outer 2 end-->
+         <b style="font-size: 25px;">Best Of </b>  <b style="font-size: 30px;">bo</b><b style="font-size: 30px;border-bottom: 3px solid red;">At</b>
+                   
+         <div style="height: 400px;" class="cards1">
+            <div class="car">
+                <div class="cardtop">
+                    <img style="height: 100%;width: 100%;" src="images/d1.PNG" alt="">
+                </div>
+                <div class="cardbot">
+                    <b>Airdopes 131</b> Rs.849
+                    <br>
+                    Rs<strike>2,999</strike> <b style="color: green;">72% off</b>
+                    <br>
+                    
+                    <input style="border-radius: 10px; height: 30px;margin-left: 105px;background-color: black;color: white;" value="Add to cart" type="submit">
+                </div>
+            </div>
+            <div class="car">
+                <div class="cardtop">
+                    <img style="height: 100%;width: 100%;" src="images/d2.PNG" alt=""> </div>
+                <div class="cardbot">
+                    <b>Airdopes 131</b> Rs.849
+                    <br>
+                    Rs<strike>2,999</strike> <b style="color: green;">72% off</b>
+                    <br>
+                    
+                    <input style="border-radius: 10px; height: 30px;margin-left: 105px;background-color: black;color: white;" value="Add to cart" type="submit">
+                
+                </div>
+            </div>
+            <div class="car">
+                <div class="cardtop">
+                    <img style="height: 100%;width: 100%;" src="images/d3.PNG" alt=""></div>
+                <div class="cardbot">
+                    <b>Airdopes 131</b> Rs.849
+                    <br>
+                    Rs<strike>2,999</strike> <b style="color: green;">72% off</b>
+                    <br>
+                    
+                    <input style="border-radius: 10px; height: 30px;margin-left: 105px;background-color: black;color: white;" value="Add to cart" type="submit">
+                
+                </div>
+            </div>
+            <div class="car">
+                <div class="cardtop">
+                    <img style="height: 100%;width: 100%;" src="images/d4.PNG" alt=""> </div>
+                <div  class="cardbot">
+                    <b>Airdopes 131</b> Rs.849
+                    <br>
+                    Rs<strike>2,999</strike> <b style="color: green;">72% off</b>
+                    <br>
+                    
+                    <input style="border-radius: 10px; height: 30px;margin-left: 105px;background-color: black;color: white;" value="Add to cart" type="submit">
+                
+                </div>
+            </div>
+            
+        </div>
+       <div class="footer">
+        <div class="f1">
+            <img style="height: 50px;margin: 30px;" src="images/logo.png" alt=""><br>
+            <b style="margin-left: 30px;font-size: 20px;">Subscribe  to our email alerts!</b><br>
+            <input placeholder="Enter your email address" style="height: 35px;margin-left: 30px;width: 80%;" type="search">
+        </div>
+        <div class="f2">
+            <br>
+            <b style="margin-top: 20px;">Shop</b>
+            <br>
+
+            <p>True wirless Earbuds</p>
+            <p>Wired Hedphones</p>
+            <p>Home Audio</p>
+            <p>Smart Watch</p>
+            <p>Missfit</p>
+            <p>Earn RS100</p>
+        </div>
+        <div class="f2">
+            <br><br>
+            <p>Wireless</p>
+            <p>Wireless Speaker</p>
+            <p>Mobile Assoiries</p>
+            <p>Trabel</p>
+            <p>Gift Card</p>
+        </div>
+        <div class="f3">
+            <br>
+            <b>Help</b>
+            <br><br>
+            <p>Track Your Order</p>
+            <p>Waranty & Support</p>
+            <p>Return polycy</p>
+            <p>Service</p>
+            <p>Service center</p>
+            <p>Bulk Order</p>
+            <p>FAQs</p>
+            <p>Why Buy Direct</p>
+        </div>
+        
+       </div>
+            
+         
+       
+    </div>
+
+</body>
+
+</html>
